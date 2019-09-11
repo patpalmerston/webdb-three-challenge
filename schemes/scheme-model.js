@@ -35,10 +35,11 @@ function add(scheme) {
 }
 
 // NOT WORKING YET
-function update(id, changes) {
-	return db('schemes')
-		.where('id', Number(id))
-		.update(changes);
+function update(scheme, id) {
+  return db('schemes')
+ 
+		.where({ id })
+		.update(scheme);
 }
 
 function remove(id) {
