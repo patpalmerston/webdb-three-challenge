@@ -34,7 +34,7 @@ function add(scheme) {
 		});
 }
 
-// NOT WORKING YET
+
 function update(scheme, id) {
   return db('schemes')
  
